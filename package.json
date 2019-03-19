@@ -1,0 +1,30 @@
+{
+  "name": "@pitolpete/utilitot",
+  "version": "1.0.0",
+  "main": "cjs/index.js",
+  "module": "esm/index.js",
+  "license": "MIT",
+  "sideEffects": false,
+  "scripts": {
+    "clean": "yarn rimraf ./cjs ./esm",
+    "prebuild": "yarn clean",
+    "build": "ts-build ./src --cjs --esm",
+    "prepack": "yarn build"
+  },
+  "devDependencies": {
+    "@ts-tools/build": "^0.1.10",
+    "@types/node": "^11.11.3",
+    "npm-run-all": "^4.1.5",
+    "rimraf": "^2.6.3",
+    "tslint": "^5.14.0",
+    "typescript": "^3.3.3333"
+  },
+  "files": [
+    "cjs",
+    "src/**/*.ts",
+    "esm"
+  ],
+  "dependencies": {
+    "@types/jest": "^24.0.11"
+  }
+}
