@@ -12,8 +12,8 @@
     "prepack": "yarn build"
   },
   "devDependencies": {
-    "@ts-tools/build": "^0.1.15",
-    "@types/node": "^12.7.0",
+    "@ts-tools/build": "^0.1.16",
+    "@types/node": "^12.7.2",
     "prettier": "^1.18.2",
     "tslint": "^5.18.0",
     "tslint-config-prettier": "^1.18.0",
