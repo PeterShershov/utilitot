@@ -13,7 +13,11 @@
   },
   "devDependencies": {
     "@ts-tools/build": "^0.1.16",
+    "@types/mocha": "^5.2.7",
     "@types/node": "^12.7.2",
+    "expect": "^24.9.0",
+    "lerna": "^3.16.4",
+    "mocha-pup": "^0.1.18",
     "prettier": "^1.18.2",
     "tslint": "^5.18.0",
     "tslint-config-prettier": "^1.18.0",
@@ -23,6 +27,5 @@
     "cjs",
     "src/**/*.ts",
     "esm"
-  ],
-  "dependencies": {}
+  ]
 }
