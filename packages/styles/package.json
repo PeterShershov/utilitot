@@ -2,8 +2,5 @@
     "name": "@utilitot/styles",
     "version": "1.0.0",
     "main": "index.js",
-    "license": "MIT",
-    "devDependencies": {
-        "expect": "^24.9.0"
-    }
+    "license": "MIT"
 }
