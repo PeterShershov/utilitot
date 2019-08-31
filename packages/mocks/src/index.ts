@@ -1,1 +1,1 @@
-export { activeFont } from './active-font'
+export { renderTestElement } from './render-test-element';

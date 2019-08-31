@@ -1,10 +1,10 @@
-interface ITestElementAttributes extends Record<string, unknown> {
+interface ITestElementAttributes {
     style?: Partial<CSSStyleDeclaration>;
     id?: string;
     className?: string;
 }
 
-function renderTestElement({ style = {}, id = 'test', className = '' }: ITestElementAttributes = {}) {
+export function renderTestElement({ style = {}, id = 'test', className = '' }: ITestElementAttributes = {}) {
     const testElement = document.createElement('div');
     testElement.id = id;
     testElement.classList.add(className);

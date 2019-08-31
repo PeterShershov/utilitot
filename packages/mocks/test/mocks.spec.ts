@@ -1,3 +1,10 @@
-// import expect from 'expect';
+import expect from 'expect';
+import { renderTestElement } from '../src';
 
-// describe('mocks', () => {});
+describe('mocks', () => {
+    it('renders a test element', () => {
+        const element = renderTestElement();
+
+        expect(element.id).toBe('test');
+    });
+});
