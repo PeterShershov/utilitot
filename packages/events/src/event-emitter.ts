@@ -1,5 +1,3 @@
-// import { noop } from '@utilitot/mocks';
-
 export class EventEmitter<T> {
     private listeners: Array<(value: T) => void> = [];
 
