@@ -2,5 +2,8 @@
     "name": "@utilitot/mocks",
     "version": "1.0.0",
     "main": "index.js",
-    "license": "MIT"
+    "license": "MIT",
+    "scripts": {
+        "test": "mocha-pup \"test/**/*.spec.ts?(x)\""
+    }
 }

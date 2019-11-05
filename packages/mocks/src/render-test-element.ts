@@ -4,10 +4,12 @@ interface ITestElementAttributes {
     className?: string;
 }
 
-export function renderTestElement({ style = {}, id = 'test', className = '' }: ITestElementAttributes = {}) {
+export function renderTestElement({ style = {}, id = 'test', className }: ITestElementAttributes = {}) {
     const testElement = document.createElement('div');
     testElement.id = id;
-    testElement.classList.add(className);
+    if (className) {
+        testElement.classList.add(className);
+    }
 
     for (const [rule, value] of Object.entries(style)) {
         testElement.style.setProperty(rule, value);

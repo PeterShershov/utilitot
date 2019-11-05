@@ -1,31 +1,26 @@
 {
   "name": "@pitolpete/utilitot",
-  "version": "1.0.0",
-  "main": "cjs/index.js",
-  "module": "esm/index.js",
   "license": "MIT",
-  "sideEffects": false,
+  "workspaces": [
+    "packages/*"
+  ],
   "scripts": {
-    "clean": "yarn rimraf ./cjs ./esm",
-    "prebuild": "yarn clean",
-    "build": "ts-build ./src --cjs --esm",
-    "prepack": "yarn build"
+    "test": "mocha-pup \"packages/**/test/**/*.spec.ts?(x)\""
   },
   "devDependencies": {
-    "@ts-tools/build": "^0.1.16",
+    "@ts-tools/build": "^1.2.0",
+    "@ts-tools/webpack-loader": "^1.1.0",
     "@types/mocha": "^5.2.7",
-    "@types/node": "^12.7.2",
+    "@types/node": "^12.12.5",
     "expect": "^24.9.0",
-    "lerna": "^3.16.4",
-    "mocha-pup": "^0.1.18",
+    "lerna": "^3.18.3",
+    "mocha": "^6.2.2",
+    "mocha-pup": "^1.0.0",
     "prettier": "^1.18.2",
-    "tslint": "^5.18.0",
+    "tslint": "^5.20.0",
     "tslint-config-prettier": "^1.18.0",
-    "typescript": "^3.5.3"
+    "typescript": "^3.7.2",
+    "webpack": "^4.41.2"
   },
-  "files": [
-    "cjs",
-    "src/**/*.ts",
-    "esm"
-  ]
+  "private": true
 }
